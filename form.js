@@ -4,13 +4,14 @@ const emailInput = document.getElementById("emailAddress")
 const saveBtn = document.getElementById("save")
 const tableBody = document.getElementById("tableBody")
 
+//helps get values of our todos
 const getElementValue= (element) => {
     return element.value
 
 }
 
 saveBtn.addEventListener("click", (event) => {
-    event.preventDefault();
+    event.preventDefault();//prevents the page from refreshing itself
 
     const firstNameValue = getElementValue(firstNameInput)
     const lastNameValue = getElementValue(lastNameInput)
